@@ -1,0 +1,41 @@
+{
+  "name": "primus",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "preinstall": "husky install"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.34.1",
+    "@tanstack/react-query-devtools": "^5.34.1",
+    "axios": "^1.6.8",
+    "dayjs": "^1.11.11",
+    "framer-motion": "^11.1.7",
+    "jotai": "^2.8.0",
+    "msw": "^2.2.14",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.4",
+    "styled-components": "^6.1.9"
+  },
+  "devDependencies": {
+    "@swc/plugin-styled-components": "^2.0.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
