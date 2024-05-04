@@ -1,6 +1,6 @@
 'use client'
 
-import { theme } from '@/_styles/theme'
+import { theme } from '@/styles/theme'
 import { useServerInsertedHTML } from 'next/navigation'
 import React, { useState } from 'react'
 import styled, { ServerStyleSheet, StyleSheetManager } from 'styled-components'

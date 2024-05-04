@@ -1,5 +1,5 @@
-import Providers from '@/_components/providers'
-import META_DATA from '@/_constants/meta'
+import Providers from '@/components/providers'
+import META_DATA from '@/constants/meta'
 import { Metadata } from 'next/types'
 
 export const metadata: Metadata = {

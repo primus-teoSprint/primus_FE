@@ -1,4 +1,4 @@
-import { instance } from '@/_libs/api'
+import { instance } from '@/libs/api'
 
 export const getToolList = async () => {
   const response = await instance.get(`/list`)
