@@ -1,8 +1,8 @@
-import { API_BASE_URL } from '@/constants/api'
+import { API_BASE_URL, API_MOCKING, MOCK_BASE_URL } from '@/constants/api'
 import axios, { AxiosError, AxiosResponse } from 'axios'
 
 export const instance = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: API_MOCKING === 'enabled' ? MOCK_BASE_URL : API_BASE_URL,
 })
 
 function responsefulfilledInterceptor(res: AxiosResponse) {
