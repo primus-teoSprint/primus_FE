@@ -20,6 +20,12 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ko" suppressHydrationWarning>
+      <head>
+        <link
+          href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
