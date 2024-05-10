@@ -14,6 +14,7 @@ export const theme = {
     light: 300,
     normal: 500,
     bold: 700,
+    extraBold: 900,
   },
 } as const
 

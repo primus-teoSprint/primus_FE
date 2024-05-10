@@ -34,6 +34,6 @@ const StyledWrapper = styled.button`
   border-radius: 15px;
 
   font-size: 0.95rem;
-  font-weight: ${theme.fontWeight.bold};
+  font-weight: ${theme.fontWeight.extraBold};
   cursor: pointer;
 `
