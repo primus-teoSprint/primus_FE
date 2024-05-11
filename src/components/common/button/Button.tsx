@@ -47,7 +47,7 @@ const StyledWrapper = styled.button<ButtonProps>`
   align-items: center;
 
   background-color: ${({ status }) =>
-    status === 'Disabled' ? theme.color.grey500 : theme.color.purple700};
+    status === 'Disabled' ? theme.color.grey400 : theme.color.purple700};
   color: ${theme.color.white};
   width: 350px;
   height: 43px;
