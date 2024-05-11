@@ -4,6 +4,7 @@ import * as DialogPrimitive from '@radix-ui/react-dialog'
 import styled from 'styled-components'
 
 const StyledContent = styled(DialogPrimitive.Content)`
+  /* 기본값 */
   position: relative;
   background-color: white;
   border-radius: 14px;
@@ -18,7 +19,7 @@ const StyledContent = styled(DialogPrimitive.Content)`
   max-width: 360px;
   min-height: 320px;
   max-height: 85vh;
-  padding: 60px 0;
+  padding: 60px 20px 54px;
   outline: none;
   animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 
