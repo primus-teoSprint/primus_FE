@@ -50,7 +50,7 @@ const StyleBottomClosedBtn = styled.button`
   justify-content: center;
   align-items: center;
   height: 54px;
-  width: 360px;
+  width: 353px;
   background-color: ${theme.color.purple700};
   color: ${theme.color.white};
   border-bottom-left-radius: 14px;
@@ -62,6 +62,7 @@ const StyleBottomClosedBtn = styled.button`
 const StyledDescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 5px;
 `
 
 const IdeaOutline = () => {

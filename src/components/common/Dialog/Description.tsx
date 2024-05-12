@@ -41,8 +41,9 @@ const StyledDescription = styled(
   /* 기본값 */
   margin: 0;
   color: ${theme.color.black};
-  line-height: 150%;
+  line-height: 120%;
   letter-spacing: -0.05em;
+  white-space: pre-wrap;
   /* size */
   ${sizeStyles}
   /* theme */

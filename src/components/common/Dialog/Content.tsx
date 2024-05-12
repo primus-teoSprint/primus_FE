@@ -16,7 +16,7 @@ const StyledContent = styled(DialogPrimitive.Content)`
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
-  max-width: 360px;
+  max-width: 353px;
   min-height: 320px;
   max-height: 85vh;
   padding: 60px 20px 54px;

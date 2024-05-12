@@ -24,6 +24,8 @@ const DialogTitleSizeStyles = css<StyledTitleProps>`
 `
 
 const StyledTitle = styled(DialogPrimitive.Title)<StyledTitleProps>`
+  line-height: 140%;
+  letter-spacing: -0.05em;
   color: ${theme.color.black};
 
   ${DialogTitleSizeStyles}
