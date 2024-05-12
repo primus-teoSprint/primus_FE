@@ -39,10 +39,6 @@ const StyledToggleGroupItem = styled(ToggleGroupItem)`
   }
 `
 
-/**
- *
- * @returns
- */
 const IdeaTypeGroup = () => {
   const [value, setValue] = useAtom(selectedIdeaTypeAtom)
 
