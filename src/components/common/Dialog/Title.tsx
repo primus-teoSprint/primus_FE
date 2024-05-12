@@ -4,6 +4,31 @@ import { theme } from '@/styles/theme'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import styled, { css } from 'styled-components'
 
+const DialogTitleSizes: DialogTitleSize = {
+  small: {
+    fontSize: '1rem',
+    fontFamily: theme.NanumFontFamily.bold,
+  },
+  medium: {
+    fontSize: '1.25rem',
+    fontFamily: theme.NanumFontFamily.extraBold,
+  },
+  large: { fontSize: '2rem', fontFamily: theme.NanumFontFamily.extraBold },
+}
+
+const DialogTitleSizeStyles = css<StyledTitleProps>`
+  ${({ size }) => css`
+    font-size: ${DialogTitleSizes[size].fontSize};
+    font-family: ${DialogTitleSizes[size].fontFamily};
+  `}
+`
+
+const StyledTitle = styled(DialogPrimitive.Title)<StyledTitleProps>`
+  color: ${theme.color.black};
+
+  ${DialogTitleSizeStyles}
+`
+
 interface DialogTitleSize {
   [key: string]: {
     fontSize: string
@@ -20,31 +45,6 @@ interface StyledTitleProps {
 interface DialogTitleProps
   extends DialogPrimitive.DialogTitleProps,
     StyledTitleProps {}
-
-const DialogTitleSizes: DialogTitleSize = {
-  small: {
-    fontSize: '16px',
-    fontFamily: theme.NanumFontFamily.bold,
-  },
-  medium: {
-    fontSize: '20px',
-    fontFamily: theme.NanumFontFamily.extraBold,
-  },
-  large: { fontSize: '32px', fontFamily: theme.NanumFontFamily.extraBold },
-}
-
-const DialogTitleSizeStyles = css<StyledTitleProps>`
-  ${({ size }) => css`
-    font-size: ${DialogTitleSizes[size].fontSize};
-    font-family: ${DialogTitleSizes[size].fontFamily};
-  `}
-`
-
-const StyledTitle = styled(DialogPrimitive.Title)<StyledTitleProps>`
-  color: ${(props) => props.theme.color.black};
-
-  ${DialogTitleSizeStyles}
-`
 
 const DialogTitle = ({ children, ...props }: DialogTitleProps) => {
   return <StyledTitle {...props}>{children}</StyledTitle>

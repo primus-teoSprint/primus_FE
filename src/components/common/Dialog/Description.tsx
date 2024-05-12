@@ -4,42 +4,15 @@ import { theme } from '@/styles/theme'
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import styled, { css } from 'styled-components'
 
-interface DialogDescriptionSize {
-  [key: string]: {
-    fontSize: string
-    padding?: string
-  }
-}
-interface DialogDescriptionTheme {
-  [key: string]: {
-    color: string
-    backgroundColor?: string
-    bolderColor?: string
-  }
-}
-
-/**
- * **size**: large, medium, small(default)
- *
- * **theme**: primary(default), color
- */
-interface StyledDescriptionProps {
-  size: string
-  theme: string
-}
-interface DialogDescriptionProps
-  extends DialogPrimitive.DialogDescriptionProps,
-    StyledDescriptionProps {}
-
 const DialogDescriptionSizes: DialogDescriptionSize = {
   small: {
-    fontSize: '12px',
+    fontSize: '0.75rem',
   },
   medium: {
-    fontSize: '14px',
+    fontSize: '0.875rem',
   },
   large: {
-    fontSize: '16px',
+    fontSize: '1rem',
   },
 }
 const DialogDescriptionThemes: DialogDescriptionTheme = {
@@ -67,7 +40,7 @@ const StyledDescription = styled(
 )<StyledDescriptionProps>`
   /* 기본값 */
   margin: 0;
-  color: black;
+  color: ${theme.color.black};
   line-height: 150%;
   letter-spacing: -0.05em;
   /* size */
@@ -75,6 +48,33 @@ const StyledDescription = styled(
   /* theme */
   ${themeStyles}
 `
+
+interface DialogDescriptionSize {
+  [key: string]: {
+    fontSize: string
+    padding?: string
+  }
+}
+interface DialogDescriptionTheme {
+  [key: string]: {
+    color: string
+    backgroundColor?: string
+    bolderColor?: string
+  }
+}
+
+/**
+ * **size**: large, medium, small(default)
+ *
+ * **theme**: primary(default), color
+ */
+interface StyledDescriptionProps {
+  size: string
+  theme: string
+}
+interface DialogDescriptionProps
+  extends DialogPrimitive.DialogDescriptionProps,
+    StyledDescriptionProps {}
 
 const DialogDescription = ({ children, ...props }: DialogDescriptionProps) => {
   return <StyledDescription {...props}>{children}</StyledDescription>

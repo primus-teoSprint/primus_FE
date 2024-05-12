@@ -13,6 +13,7 @@ import {
 } from '../common/Dialog'
 import styled from 'styled-components'
 import { FaX } from 'react-icons/fa6'
+import { theme } from '@/styles/theme'
 
 const IdeaOutlineContainer = styled.div`
   display: flex;
@@ -34,8 +35,8 @@ const StyledBottomBtn = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: ${(props) => props.theme.color.grey500};
-  background-color: ${(props) => props.theme.color.grey200};
+  color: ${theme.color.grey500};
+  background-color: ${theme.color.grey200};
   position: absolute;
   top: 10px;
   right: 10px;
@@ -50,15 +51,14 @@ const StyleBottomClosedBtn = styled.button`
   align-items: center;
   height: 54px;
   width: 360px;
-  background-color: ${(props) => props.theme.color.purple700};
-  color: ${(props) => props.theme.color.white};
+  background-color: ${theme.color.purple700};
+  color: ${theme.color.white};
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   &:hover {
     cursor: pointer;
   }
 `
-
 const StyledDescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
