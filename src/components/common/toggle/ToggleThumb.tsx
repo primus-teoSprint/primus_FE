@@ -6,17 +6,16 @@ import styled from 'styled-components'
 
 const StyledThumb = styled(Switch.SwitchThumb)`
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   background-color: ${theme.color.white};
   border-radius: 9999px;
-  box-shadow: 0 2px 2px var(--black-a7);
   transition: transform 300ms;
   transform: translateX(2px);
   will-change: transform;
 
   &[data-state='checked'] {
-    transform: translateX(19px);
+    transform: translateX(30px);
   }
 `
 

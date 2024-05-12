@@ -5,8 +5,8 @@ import { theme } from '@/styles/theme'
 import styled from 'styled-components'
 
 const StyledRoot = styled(Switch.Root)`
-  width: 42px;
-  height: 25px;
+  width: 58px;
+  height: 31px;
   background-color: ${theme.color.grey200};
   border-radius: 9999px;
   position: relative;
