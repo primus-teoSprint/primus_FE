@@ -1,14 +1,11 @@
-'use client'
-
-import * as Switch from '@radix-ui/react-switch'
-import { theme } from '@/styles/theme'
-import styled from 'styled-components'
+import ToggleRoot from './ToggleRoot'
+import ToggleThumb from './ToggleThumb'
 
 const Toggle = () => {
   return (
-    <Switch.Root className="SwitchRoot" id="airplane-mode">
-      <Switch.Thumb className="SwitchThumb" />
-    </Switch.Root>
+    <ToggleRoot>
+      <ToggleThumb />
+    </ToggleRoot>
   )
 }
 
