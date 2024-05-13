@@ -28,7 +28,8 @@ const LayoutRegistry = ({ children }: { children: React.ReactNode }) => {
 export default LayoutRegistry
 
 const StyledWrapper = styled.main`
-  max-width: 480px;
+  max-width: 430px;
+  min-width: 363px;
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;

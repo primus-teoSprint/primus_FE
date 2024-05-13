@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import {
   DialogClose,
   DialogContent,
@@ -10,10 +9,10 @@ import {
   DialogRoot,
   DialogTitle,
   DialogTrigger,
-} from '../common/Dialog'
-import styled from 'styled-components'
-import { FaX } from 'react-icons/fa6'
+} from '@/components/common/Dialog'
 import { theme } from '@/styles/theme'
+import { FaX } from 'react-icons/fa6'
+import styled from 'styled-components'
 
 const IdeaOutlineContainer = styled.div`
   display: flex;
