@@ -13,6 +13,7 @@ export const theme = {
     grey600: '#9f9f9f',
     grey700: '#989898',
     red: '#ff0000',
+    pink: '#F022AA',
   },
   fontWeight: {
     light: 300,
